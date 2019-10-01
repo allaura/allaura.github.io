@@ -1,15 +1,10 @@
 body{
-	margin: 0px;
+	margin: auto 0;
+	font-family: 'Lobster', cursive;
 }
-.container{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 
 h1{
-	font-family: fantasy;
+	font-family: 'Lobster', cursive;
 	font-size:3em;
 	border-bottom: 2px solid pink;
 	border-right: 2px solid pink;
@@ -18,14 +13,65 @@ h1{
 	box-shadow: 4px 4px 5px #888888;
 	margin-top: 10px;
 }
+.photo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.photo img{
+	width: 300px;
+	height: 500px;
+	margin: 10px;
+	transition: all 1s;
+}
 
-img{
+.photo img:hover{
+	transform: scale(1.1);
+}
+
+/*:hover{
+	transform: rotate(-7deg);
+}
+/*
+/*COVER*/
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*GRID*/
+.project{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.project img{
 	width: 350px;
 	height: 350px;
 	margin: 10px;
 	transition: all 1s;
 }
-
-img:hover{
+.project img:hover{
 	transform: scale(1.1);
+}
+
+h2{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+}
+p, ul{
+	margin-left: 30px;
+}
+h3{
+	font-family: 'Lobster', cursive;
+	margin-left: 30px;
+}
+
+#userinput{
+	margin-left: 30px;
+}
+
+footer{
+	text-align: center;
 }
